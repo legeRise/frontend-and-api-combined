@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  api:
+    image: habib926653/videoapidjango:latest
+    ports:
+      - "9200:80"
+
+  frontend:
+    image: habib926653/api_frontend:latest
+    ports:
+      - "80:80"
